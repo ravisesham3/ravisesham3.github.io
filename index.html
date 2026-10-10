@@ -163,6 +163,8 @@ h1 span{color:var(--cyan);text-shadow:var(--glow)}
 .pdesc{list-style:none}
 .pdesc li{font-size:.74rem;color:rgba(200,230,255,.55);line-height:1.7;padding:4px 0;display:flex;gap:8px}
 .pdesc li::before{content:'→';color:var(--cyan);flex-shrink:0}
+.plink{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-family:'Orbitron',sans-serif;font-size:.6rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;color:var(--cyan);border:1px solid var(--cyan);padding:9px 16px;transition:.3s}
+.plink:hover{background:var(--cyan);color:var(--dark)}
 
 /* certs & strengths */
 .certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
@@ -337,35 +339,33 @@ footer{position:relative;z-index:1;padding:36px 60px;border-top:1px solid var(--
       <div class="section-line reveal"></div>
       <p class="reveal">From Azure cloud services and networking to DevOps pipelines and infrastructure as code — here's what I bring to every project.</p>
       <div class="tool-cloud reveal">
-        <span class="tag">AWS</span><span class="tag">Jenkins</span><span class="tag">VM Scale Sets</span>
-        <span class="tag">Azure SQL</span><span class="tag">App Services</span><span class="tag">Azure Monitor</span>
-        <span class="tag">Log Analytics</span><span class="tag">Key Vault</span><span class="tag">Maven</span>
-        <span class="tag">YAML</span><span class="tag">Python</span><span class="tag">Embedded C</span>
+        <span class="tag">Azure Cloud</span><span class="tag">Azure Administration</span><span class="tag">Azure CLI</span><span class="tag">VM Scale Sets</span><span class="tag">App Services</span><span class="tag">Azure SQL</span><span class="tag">Key Vault</span><span class="tag">Log Analytics</span><span class="tag">Application Insights</span><span class="tag">YAML</span><span class="tag">DevSecOps</span><span class="tag">DevOps</span><span class="tag">Site Reliability Engineering</span><span class="tag">SRE</span><span class="tag">Grafana</span><span class="tag">Linux</span><span class="tag">Azure AI</span>
       </div>
     </div>
     <div>
       <div class="skill-group">
         <div class="group-title reveal">Azure Cloud</div>
-        <div class="skill-row reveal"><div class="skill-ico">🖥️</div><div><div class="skill-name">Virtual Machines</div><div class="skill-sub">IaaS compute workloads</div></div><div class="bar"><i data-level="85"></i></div><div class="pct">85%</div></div>
-        <div class="skill-row reveal"><div class="skill-ico">🌐</div><div><div class="skill-name">App Services</div><div class="skill-sub">PaaS web deployment</div></div><div class="bar"><i data-level="78" style="--c:#00d4ff"></i></div><div class="pct">78%</div></div>
-        <div class="skill-row reveal"><div class="skill-ico">💾</div><div><div class="skill-name">Storage Accounts</div><div class="skill-sub">Blob, File Shares, Queue, Table</div></div><div class="bar"><i data-level="80" style="--c:#7b2fff"></i></div><div class="pct">80%</div></div>
-        <div class="skill-row reveal"><div class="skill-ico">🔑</div><div><div class="skill-name">RBAC &amp; IAM</div><div class="skill-sub">Role-based access control</div></div><div class="bar"><i data-level="75" style="--c:#ffb800"></i></div><div class="pct">75%</div></div>
-        <div class="skill-row reveal"><div class="skill-ico">📊</div><div><div class="skill-name">Monitor &amp; Key Vault</div><div class="skill-sub">Observability &amp; secrets</div></div><div class="bar"><i data-level="72" style="--c:#2cff8a"></i></div><div class="pct">72%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">☁️</div><div><div class="skill-name">Azure Administration</div><div class="skill-sub">VMs, App Services, RBAC &amp; governance</div></div><div class="bar"><i data-level="85"></i></div><div class="pct">85%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">🔗</div><div><div class="skill-name">Azure Networking</div><div class="skill-sub">VNets, Subnets, NSG, Load Balancer, DNS</div></div><div class="bar"><i data-level="83"></i></div><div class="pct">83%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">💾</div><div><div class="skill-name">Azure Storage</div><div class="skill-sub">Blob, File Shares, Queue, Table</div></div><div class="bar"><i data-level="80"></i></div><div class="pct">80%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">📊</div><div><div class="skill-name">Azure Monitoring</div><div class="skill-sub">Azure Monitor, Log Analytics, App Insights</div></div><div class="bar"><i data-level="75"></i></div><div class="pct">75%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">🤖</div><div><div class="skill-name">Azure AI</div><div class="skill-sub">Azure AI services &amp; prompt engineering</div></div><div class="bar"><i data-level="60"></i></div><div class="pct">60%</div></div>
       </div>
       <div class="skill-group">
-        <div class="group-title reveal">Networking &amp; DevOps</div>
-        <div class="skill-row reveal"><div class="skill-ico">🔗</div><div><div class="skill-name">VNets / Subnets / NSG</div><div class="skill-sub">Network segmentation &amp; security</div></div><div class="bar"><i data-level="83"></i></div><div class="pct">83%</div></div>
-        <div class="skill-row reveal"><div class="skill-ico">⚖️</div><div><div class="skill-name">Load Balancer / DNS</div><div class="skill-sub">High availability routing</div></div><div class="bar"><i data-level="78" style="--c:#2cff8a"></i></div><div class="pct">78%</div></div>
-        <div class="skill-row reveal"><div class="skill-ico">🔄</div><div><div class="skill-name">Azure DevOps CI/CD</div><div class="skill-sub">YAML pipelines &amp; repos</div></div><div class="bar"><i data-level="78" style="--c:#7b2fff"></i></div><div class="pct">78%</div></div>
-        <div class="skill-row reveal"><div class="skill-ico">🐳</div><div><div class="skill-name">Docker &amp; AKS</div><div class="skill-sub">Containers &amp; Kubernetes</div></div><div class="bar"><i data-level="70" style="--c:#00d4ff"></i></div><div class="pct">70%</div></div>
-        <div class="skill-row reveal"><div class="skill-ico">⚡</div><div><div class="skill-name">Git &amp; GitHub</div><div class="skill-sub">Version control &amp; branching</div></div><div class="bar"><i data-level="80" style="--c:#ff5a2c"></i></div><div class="pct">80%</div></div>
+        <div class="group-title reveal">DevOps &amp; Containers</div>
+        <div class="skill-row reveal"><div class="skill-ico">🔄</div><div><div class="skill-name">CI/CD &amp; YAML Pipelines</div><div class="skill-sub">Azure DevOps pipelines &amp; repos</div></div><div class="bar"><i data-level="78"></i></div><div class="pct">78%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">⚡</div><div><div class="skill-name">Git &amp; GitHub</div><div class="skill-sub">Version control, branching, Actions</div></div><div class="bar"><i data-level="80"></i></div><div class="pct">80%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">🐳</div><div><div class="skill-name">Docker</div><div class="skill-sub">Containerizing applications</div></div><div class="bar"><i data-level="72"></i></div><div class="pct">72%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">☸️</div><div><div class="skill-name">Kubernetes &amp; AKS</div><div class="skill-sub">Orchestration on Azure Kubernetes Service</div></div><div class="bar"><i data-level="70"></i></div><div class="pct">70%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">🛡️</div><div><div class="skill-name">DevSecOps</div><div class="skill-sub">Secure pipelines &amp; secret management (Key Vault)</div></div><div class="bar"><i data-level="65"></i></div><div class="pct">65%</div></div>
       </div>
       <div class="skill-group">
-        <div class="group-title reveal">IaC &amp; Scripting</div>
-        <div class="skill-row reveal"><div class="skill-ico">🏗️</div><div><div class="skill-name">ARM Templates</div><div class="skill-sub">Repeatable deployments</div></div><div class="bar"><i data-level="76"></i></div><div class="pct">76%</div></div>
-        <div class="skill-row reveal"><div class="skill-ico">🧱</div><div><div class="skill-name">Terraform</div><div class="skill-sub">Infrastructure as Code</div></div><div class="bar"><i data-level="72" style="--c:#7b2fff"></i></div><div class="pct">72%</div></div>
-        <div class="skill-row reveal"><div class="skill-ico">⌨️</div><div><div class="skill-name">Azure CLI</div><div class="skill-sub">Command-line automation</div></div><div class="bar"><i data-level="74" style="--c:#2cff8a"></i></div><div class="pct">74%</div></div>
-        <div class="skill-row reveal"><div class="skill-ico">🐍</div><div><div class="skill-name">Python</div><div class="skill-sub">Scripting &amp; ML basics</div></div><div class="bar"><i data-level="72" style="--c:#ffb800"></i></div><div class="pct">72%</div></div>
+        <div class="group-title reveal">IaC, Linux &amp; Reliability</div>
+        <div class="skill-row reveal"><div class="skill-ico">🏗️</div><div><div class="skill-name">ARM Templates</div><div class="skill-sub">Repeatable Azure deployments</div></div><div class="bar"><i data-level="76"></i></div><div class="pct">76%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">🧱</div><div><div class="skill-name">Terraform</div><div class="skill-sub">Infrastructure as Code</div></div><div class="bar"><i data-level="72"></i></div><div class="pct">72%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">⌨️</div><div><div class="skill-name">Azure CLI</div><div class="skill-sub">Command-line automation</div></div><div class="bar"><i data-level="74"></i></div><div class="pct">74%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">🐧</div><div><div class="skill-name">Linux</div><div class="skill-sub">Administration &amp; troubleshooting</div></div><div class="bar"><i data-level="70"></i></div><div class="pct">70%</div></div>
+        <div class="skill-row reveal"><div class="skill-ico">📈</div><div><div class="skill-name">SRE &amp; Grafana</div><div class="skill-sub">Site reliability, dashboards &amp; observability</div></div><div class="bar"><i data-level="62"></i></div><div class="pct">62%</div></div>
       </div>
     </div>
   </div>
@@ -431,6 +431,16 @@ footer{position:relative;z-index:1;padding:36px 60px;border-top:1px solid var(--
         <li>Programmed Arduino in Embedded C to emit pulses and calculate distance accurately.</li>
         <li>Integrated the sensor with a servo motor for 180-degree environmental scanning.</li>
       </ul>
+    </div>
+    <div class="card project-card reveal">
+      <div class="project-num">04</div><span class="project-icon">🏠</span>
+      <div class="project-title">HostelBuddy</div>
+      <div class="ptags"><span class="ptag">MERN Stack</span><span class="ptag">MongoDB</span><span class="ptag">Express</span><span class="ptag">React</span><span class="ptag">Node.js</span></div>
+      <ul class="pdesc">
+        <li>Built a full-stack web application on the MERN stack (MongoDB, Express, React, Node.js).</li>
+        <li>Increased user retention by 25% through a supportive and intuitive user journey.</li>
+      </ul>
+      <a class="plink" href="https://preview--shelf-sparkle-flow.lovable.app/" target="_blank" rel="noopener">Live Project ↗</a>
     </div>
   </div>
 </section>
@@ -549,23 +559,32 @@ if(matchMedia('(hover:hover)').matches){
   const img=document.getElementById('photoImg'),fb=document.getElementById('photoFallback'),
         tools=document.getElementById('photoTools'),input=document.getElementById('photoInput'),
         pick=document.getElementById('pickBtn'),dl=document.getElementById('dlBtn');
+  // Owner-only tools: open  yoursite.github.io/?edit  once on YOUR browser to unlock; ?edit=off locks again.
+  // Other visitors never get this flag, so they never see the buttons.
+  let EDIT=false;
+  try{
+    const q=new URLSearchParams(location.search).get('edit');
+    if(q==='off')localStorage.removeItem('rbsOwner');
+    else if(q!==null)localStorage.setItem('rbsOwner','1');
+    EDIT=localStorage.getItem('rbsOwner')==='1';
+  }catch(e){}
   let triedSaved=false,current=null;
   function show(src,isLocal){
     img.src=src;img.style.display='block';fb.style.display='none';
-    if(isLocal){tools.hidden=false;dl.hidden=false;pick.textContent='📷 Change photo'}
+    if(isLocal&&EDIT){tools.hidden=false;dl.hidden=false;pick.textContent='📷 Change photo'}
   }
   function failed(){
     if(!triedSaved){
       triedSaved=true;
-      let s=null;try{s=localStorage.getItem('rbsPhoto')}catch(e){}
+      let s=null;if(EDIT){try{s=localStorage.getItem('rbsPhoto')}catch(e){}}
       if(s){current=s;show(s,true);return}
     }
-    img.style.display='none';fb.style.display='';tools.hidden=false;
+    img.style.display='none';fb.style.display='';if(EDIT)tools.hidden=false;
   }
   img.addEventListener('load',()=>{img.style.display='block';fb.style.display='none'});
   img.addEventListener('error',failed);
   if(img.complete){ if(img.naturalWidth>0){img.style.display='block';fb.style.display='none'} else failed(); }
-  if(location.search.includes('edit')) tools.hidden=false;
+  if(EDIT) tools.hidden=false;
 
   pick.onclick=()=>input.click();
   const adj=document.getElementById('adjust'),zR=document.getElementById('zoomR'),xR=document.getElementById('xR'),yR=document.getElementById('yR');
